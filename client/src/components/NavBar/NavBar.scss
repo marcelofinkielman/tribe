@@ -5,104 +5,114 @@
 
 .navBar {
   font-family: inherit;
- 
-
-  position:absolute;
-  
-
   width: 100%;
-  height: 200px;
-  background-image: linear-gradient(#f77b29, #e15515);
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  justify-content: center;
+  border-bottom: 2px solid orange;
 
   @include tablet {
-    flex-direction: row;
-    height: 186px;
-    justify-content: space-between;
-    align-items: baseline;
+    width: 250px;
+    height: 850px;
     padding-top: 38.39px;
+    border-bottom: none;
+    border-right: 2px solid orange;
+   
+    justify-content: end;
   }
 
-  @include desktop {
-    height: 186px;
-  }
-
-  &__logo-container {
+  &__logo-container1 {
     display: flex;
     height: 80px;
     justify-content: center;
     padding-top: 15.39px;
-    border-radius: 50%;
     @include tablet {
       flex-direction: row;
       padding-top: 0;
-      margin-left: $tablet-spacing;
+      display: none;
     }
     @include desktop {
-      margin-left: $desktop-spacing;
+      display: none;
     }
   }
-
-  &__logo {
-    border-radius: 50%;
+  &__logo-container2 {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    padding-top: 10.39px;
+    display: none;
+    @include tablet {
+      display: flex;
+      height: 50px;
+    }
+    @include desktop {
+    }
   }
 
   &__linksAndProfiles {
     display: flex;
-    justify-content: center;
     margin: $mobile-spacing;
-    margin-top: 36.71px;
-    justify-content: space-between;
-
-    :hover {
-      text-decoration: underline;
-      color: white;
-    }
+    justify-content: space-around;
 
     @include tablet {
-      margin: 0 $tablet-spacing 0 0;
-      align-items: center;
-      justify-content: center;
+      margin: 10px $tablet-spacing 0 10px;
+      align-items: flex-start;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
     }
 
     @include desktop {
-      margin: 0 $desktop-spacing 0 0;
+      margin: 0 90px 0 0;
       align-items: center;
       justify-content: center;
     }
   }
 
   &__profile {
-    height: 60px;
+    height: 40px;
     border-radius: 50%;
-    
+    @include tablet {
+      margin: 40px 0 0 20px;
+    }
+    @include desktop {
+      margin: 40px 0 0 0px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    :hover {
+      background-color: $hoverButton-color;
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
   }
 
   &__link {
-    width: 164px;
-    height: 36px;
+    width: 124px;
+    height: 40px;
     text-decoration: none;
-
     display: flex;
     justify-content: center;
-    background-color: $nav-hover-color;
     border-radius: 8px;
     @include typo-button-header;
-    color: $border-color;
+    color: $letters-color;
     @include tablet {
       height: 38px;
       line-height: 34px;
-      width: 107px;
-      padding: 0;
-      text-align: center;
+      width: 200px;
+      justify-content: flex-start;
+      margin-left: 20px;
     }
-
-    &:focus {
-      background-color: $global-color;
-      color: white;
+    @include desktop {
+      margin-left: 128px;
+      width: 180px;
     }
   }
 

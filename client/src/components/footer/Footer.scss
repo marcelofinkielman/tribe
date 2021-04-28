@@ -1,0 +1,32 @@
+@use '../../Style/Partials/Global.scss' as *;
+@use '../../Style/Partials/Mixin.scss' as *;
+@use '../../Style/Partials/Typography.scss' as *;
+@use '../../Style/Partials/Variables.scss' as *;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 2.4rem 0 4rem 0;
+  align-items: center;
+  overflow: hidden;
+  background-color: $page-color;
+  
+
+
+  &__text {
+    width: 157px;
+    height: 16px;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: normal;
+    font-family: inherit;
+    @include tablet {
+      width: 171px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  @include desktop {
+    // padding-top:822px;
+  }
+}

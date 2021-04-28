@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import "./Footer.scss";
 
 function Footer() {
   return (
-    <div>
-      
-    </div>
-  )
+    <footer className="footer">
+      <h4 className="footer__text">&copy; InStock Inc. All Rights Reserved.</h4>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

@@ -14,14 +14,17 @@ class App extends React.Component {
       <div className="app">
         <BrowserRouter>
           <NavBar />
+          
           <Switch>
             <Route path="/" exact component={MyPage} />
             <Route path="/profile" exact component={MyPage} />
             <Route path="/create" exact component={CreateEvent} />
             <Route component={PageNotFound} />
+            
           </Switch>
           <Footer />
         </BrowserRouter>
+        
       </div>
     );
   }
