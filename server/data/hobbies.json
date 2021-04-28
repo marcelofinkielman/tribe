@@ -2,12 +2,6 @@
   {
     "id": "2922c286-16cd-4d43-ab98-c79f698aeab0",
     "event": "Coding",
-    "country": "USA",
-    "contact": {
-      "name": "Marcelo Finkielman",
-      "zoom": "https://us05web.zoom.us/j/83584948467?pwd=MWEvT0cyT0llYTZnaFoycFRrUWl5Zz09",
-      "email": "mar222@gmail.com"
-    },
     "tags": [
       "javascript",
       "python",
@@ -19,12 +13,6 @@
   {
     "id": "5bf7bd6c-2b16-4129-bddc-9d37ff8539e9",
     "event": "Book club",
-    "country": "Canada",
-    "contact": {
-      "name": "Marcelo Finkielman",
-      "zoom": "https://us05web.zoom.us/j/83584948467?pwd=MWEvT0cyT0llYTZnaFoycFRrUWl5Zz09",
-      "email": "mar222@gmail.com"
-    },
     "tags": [
       "romance",
       "thriller",
@@ -36,12 +24,6 @@
   {
     "id": "90ac3319-70d1-4a51-b91d-ba6c2464408c",
     "event": "Fitness",
-    "country": "USA",
-    "contact": {
-      "name": "Marcelo Finkielman",
-      "zoom": "https://us05web.zoom.us/j/83584948467?pwd=MWEvT0cyT0llYTZnaFoycFRrUWl5Zz09",
-      "email": "mar222@gmail.com"
-    },
     "tags": [
       "pilates",
       "ioga",
@@ -52,12 +34,6 @@
   {
     "id": "90ac3319-70d1-4a51-b91d-ba6c2464408c",
     "event": "Cooking class",
-    "country": "USA",
-    "contact": {
-      "name": "Marcelo Finkielman",
-      "zoom": "https://us05web.zoom.us/j/83584948467?pwd=MWEvT0cyT0llYTZnaFoycFRrUWl5Zz09",
-      "email": "mar222@gmail.com"
-    },
     "tags": [
       "vegan",
       "brazilian",

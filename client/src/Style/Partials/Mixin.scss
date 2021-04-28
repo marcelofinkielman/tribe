@@ -1,0 +1,148 @@
+@use './variables' as *;
+@use './variables' as *;
+@use './typography' as *;
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+// typography
+@mixin typo-heading {
+  font-size: $m-header;
+  font-family: "Titillium";
+  font-weight: 600;
+  line-height: 3.6rem;
+}
+@mixin typo-header {
+  font-size: $m-subheader;
+  font-family: "Titillium";
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+
+@mixin typo-sub-heading {
+  font-size: $m-subheader;
+  font-family: "Titillium";
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+
+@mixin typo-button-header {
+  font-size: $m-labels;
+  font-family: "Titillium";
+  font-weight: 600;
+  line-height: 2rem;
+  color: white;
+  align-items: center;
+}
+
+@mixin typo-table-header {
+  font-size: $m-table-header;
+  font-family: "Titillium";
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: $placeholder-color;
+}
+
+@mixin typo-body-medium {
+  font-size: $m-labels;
+  font-family: "Titillium";
+  font-weight: 400;
+  line-height: 2rem;
+  color: $global-color;
+}
+
+@mixin typo-warehouse-location {
+  font-size: $m-labels;
+  font-family: "Titillium";
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: $placeholder-color;
+}
+// keep this typo-table-input!New and correct
+@mixin typo-table-input {
+  font-size: $m-labels;
+  font-family: "Titillium";
+  font-weight: 600;
+  line-height: 2rem;
+}
+@mixin typo-footer {
+  font-size: $m-table-header;
+  font-family: "Titillium";
+  font-weight: 400;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+@mixin typo-del-modal {
+  font-family: "Titillium";
+  font-weight: 400;
+  font-size: $m-p-large;
+  line-height: 2.6rem;
+}
+
+@mixin titilliumReg {
+  font-family: 'Titillium';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin titilliumSemi {
+  font-family: 'Titillium';
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin titilliumEditHeaded {
+  font-family: 'Titillium';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+// buttons
+@mixin cta-header {
+  background: $global-color;
+  border-radius: 2rem;
+}
+
+@mixin cta-main {
+  align-items: center;
+  padding: 0.8rem 8.4rem;
+  background: $inter-color;
+  border-radius: 2rem;
+  color: #fff;
+  font-family: "Titillium";
+}
+
+@mixin cta-secondary {
+  align-items: center;
+  padding: 0.8rem 8.4rem;
+  background: #fff;
+  border-radius: 2rem;
+  color: $placeholder-color;
+  font-family: "Titillium";
+}
+
+@mixin cta-input {
+  background: white;
+  border: 0.1rem solid $border-color;
+  box-sizing: border-box;
+  border-radius: 2rem;
+}
+
+//flexbox
+@mixin flex-directory {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

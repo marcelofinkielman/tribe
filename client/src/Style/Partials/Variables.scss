@@ -1,0 +1,45 @@
+$global-color: #13182c;
+$inter-color: #2e66e5;
+$border-color: #bdc5d5;
+$placeholder-color: #5c667e;
+$nav-hover-color: #232940;
+$page-color: #f7f8f9;
+$instock-color: #158463;
+$instock-opacity: rgba(21, 132, 99, 0.07);
+$outofstock-color: #c94515;
+$outofstock-opacity: rgba(201, 69, 21, 0.07);
+
+// font-sizes
+$m-header: 2.8rem;
+$m-subheader: 2rem;
+$m-labels: 1.3rem;
+$m-table-header: 1.1rem;
+$m-p-large: 1.5rem;
+$m-button-font-size: 0.8125rem;
+
+$td-header: 3.2rem;
+$td-subheader: 2.4rem;
+$td-labels: 1.4rem;
+$td-table-header: 1.2rem;
+$td-p-large: 1.6rem;
+
+// spacing
+$mobile-spacing: 1.6rem;
+$tablet-spacing: 3.2rem;
+$desktop-spacing: 13rem;
+
+// Spacing Increments
+$extra-tiny: 0.4rem;
+$tiny: 0.8rem;
+$extra-small: 1.6rem;
+$small: 2.4rem;
+$medium: 3.2rem;
+$large: 4rem;
+$extra-large: 4.8rem;
+$huge: 5.6rem;
+
+// Shadows
+$box-shadow-page: 0rem 0.1rem 1.5rem rgba(0, 0, 0, 0.15);
+
+// Separator
+$cell-separator: 1px solid $border-color;

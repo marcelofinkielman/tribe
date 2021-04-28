@@ -1,0 +1,11 @@
+@use './Mixin.scss' as *;
+@use './Variables' as *;
+@use './Typography' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
