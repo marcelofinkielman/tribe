@@ -1,0 +1,19 @@
+@use '../../Style/Partials/Global.scss' as *;
+@use '../../Style/Partials/Mixin.scss' as *;
+@use '../../Style/Partials/Typography.scss' as *;
+@use '../../Style/Partials/Variables.scss' as *;
+
+.heading {
+    color: white;
+    background-color: rgb(199, 86, 26);
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+  }
+.create {
+margin: $mobile-spacing;
+  
+
+}

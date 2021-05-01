@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "./Style/Partials/Global.scss";
+import "./App.scss"
 import MyPage from "./pages/MyPage/MyPage.jsx"
 import CreateEvent from "./pages/CreateEvent/CreateEvent.jsx"
 import PageNotFound from "./pages/404NotFound/PageNotFound.jsx";
@@ -13,7 +13,11 @@ class App extends React.Component {
     return (
       <div className="app">
         <BrowserRouter>
+        <div >
           <NavBar />
+          
+        </div>
+          
           
           <Switch>
             <Route path="/" exact component={MyPage} />
@@ -23,6 +27,7 @@ class App extends React.Component {
             
           </Switch>
           <Footer />
+          
         </BrowserRouter>
         
       </div>

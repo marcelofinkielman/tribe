@@ -1,0 +1,8 @@
+@use '../../client/src/Style/Partials/Global.scss' as *;
+@use '../../client/src/Style/Partials/Mixin.scss' as *;
+@use '../../client/src/Style/Partials/Typography.scss' as *;
+@use '../../client/src/Style/Partials/Variables.scss' as *;
+
+.app {
+  font-family: Arial, Helvetica, sans-serif;
+}

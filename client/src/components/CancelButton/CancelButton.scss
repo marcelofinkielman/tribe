@@ -1,0 +1,26 @@
+@use '../../Style/Partials/Global.scss' as *;
+@use '../../Style/Partials/Mixin.scss' as *;
+@use '../../Style/Partials/Typography.scss' as *;
+@use '../../Style/Partials/Variables.scss' as *;
+
+.cancel-cta {
+  height: 3.6rem;
+  width: 13.9rem;
+  border-radius: 2rem;
+  background-color: white;
+  outline: none;
+  color: rgb(196, 120, 79);
+  border: 0.01rem solid #bdc5d5;
+  @include typo-table-input;
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgb(199, 86, 26);
+    color: rgb(199, 86, 26);
+  }
+
+  @include tablet {
+    width: 7.2rem;
+    height: 3.8rem;
+  }
+}

@@ -26,7 +26,44 @@
   align-items: center;
 }
 
+@mixin typo-table-input {
+  font-size: $m-labels;
+  font-family: "Titillium";
+  font-weight: 600;
+  line-height: 2rem;
+}
 
+@mixin cta-input {
+  background: white;
+  border: 0.1rem solid $border-color;
+  box-sizing: border-box;
+  border-radius: 2rem;
+}
+
+@mixin typo-body-medium {
+  font-size: $m-labels;
+  font-family: "Titillium";
+  font-weight: 400;
+  line-height: 2rem;
+  color: $global-color;
+}
+
+@mixin typo-footer {
+  font-size: $m-table-header;
+  font-family: "Titillium";
+  font-weight: 400;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+@mixin cta-main {
+  align-items: center;
+  padding: 0.8rem 8.4rem;
+  background: $inter-color;
+  border-radius: 2rem;
+  color: #fff;
+  font-family: "Titillium";
+}
 
 //flexbox
 @mixin flex-directory {

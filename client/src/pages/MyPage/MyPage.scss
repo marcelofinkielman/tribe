@@ -1,0 +1,49 @@
+@use '../../Style/Partials/Global.scss' as *;
+@use '../../Style/Partials/Mixin.scss' as *;
+@use '../../Style/Partials/Typography.scss' as *;
+@use '../../Style/Partials/Variables.scss' as *;
+
+.myPage {
+
+  &__heading {
+    color: white;
+    background-color: rgb(199, 86, 26);
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: $mobile-spacing;
+
+  }
+
+  &__events {
+    width: 100%;
+  }
+
+  &__picture {
+    height: 180px;
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 4px;
+    padding-left: $mobile-spacing;
+  }
+
+  &__description {
+    color: rgb(199, 86, 26);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+    padding-left: $mobile-spacing;
+  }
+
+  &__button {
+    color: white;
+    height: 25px;
+    width: 80px;
+    border-radius: 8px;
+    border: 0;
+    background-color: rgb(199, 86, 26);
+  }
+}

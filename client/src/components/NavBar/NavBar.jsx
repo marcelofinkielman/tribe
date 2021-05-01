@@ -6,8 +6,11 @@ import "../../Style/Partials/Global.scss";
 import { Link } from "react-router-dom";
 import Profile from "../../assets/images/profile.jpg"
 
+
 function NavBar() {
+  
   return (
+    <>
     <div className="navBar">
       <Link to="/">
         <div className="navBar__logo-container1">
@@ -29,6 +32,7 @@ function NavBar() {
         </div>
       </div>
     </div>
+     </>
   );
 }
 
