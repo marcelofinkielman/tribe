@@ -71,3 +71,61 @@
   justify-content: center;
   text-align: center;
 }
+//input 
+@mixin input {
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid rgb(255, 89, 0);
+  &:hover {
+    background-color: rgb(213, 115, 11);
+  }
+  &::placeholder {
+    color: black;
+  }
+}
+
+@mixin inputDate {
+  height: 40px;
+  border: 2px solid rgb(255, 89, 0);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  &:hover {
+    background-color: rgb(213, 115, 11);
+  }
+}
+
+//label
+@mixin label {
+  color: $tribe-color;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+//textarea
+@mixin textarea {
+  border-radius: 10px;
+  padding: 30px;
+  border: 2px solid rgb(255, 89, 0);
+}
+
+//publishButtons 
+@mixin publishButton {
+  width: 180px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px dotted orange;
+  &:hover {
+    background-color: rgb(213, 115, 11);
+  }
+}
+
+//cancelButton 
+@mixin cancelButton {
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  border: 0;
+  margin-left: 20px;
+  border: 1px dotted orange;
+}

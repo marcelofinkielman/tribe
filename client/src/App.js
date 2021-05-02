@@ -17,8 +17,7 @@ class App extends React.Component {
           <NavBar />
           
         </div>
-          
-          
+
           <Switch>
             <Route path="/" exact component={MyPage} />
             <Route path="/profile" exact component={MyPage} />

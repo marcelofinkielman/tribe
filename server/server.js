@@ -2,9 +2,9 @@ const express = require("express")
 const app = express();
 const cors = require("cors");
 const fs = require('fs');
-const uuid = require ('uuid');
+const uuid = require('uuid');
 app.use(cors());
-app.use (express.json());
+app.use(express.json());
 
 const filePath = './data/events.json'
 
@@ -50,12 +50,16 @@ app.get('/tags', (req, res) => {
 
 app.post("/create", function (req, res) {
   //validate the request object
-  if (!req.body.event || !req.body.date || !req.body.description || !req.body.tags) {
+  if (!req.body.event ||
+    !req.body.date ||
+    !req.body.description ||
+    !req.body.organizer ||
+    !req.body.tags) {
     return res.status(400).send({ error: 'Missing data' })
   }
 
-  let {event, date, description, tags} = req.body
-  
+  let { event, date, description, organizer, tags } = req.body
+
   //get all events
   let events = getEvents()
 
@@ -65,6 +69,7 @@ app.post("/create", function (req, res) {
     event,
     date,
     description,
+    organizer,
     tags
   }
   events.push(newEvent)

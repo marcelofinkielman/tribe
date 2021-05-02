@@ -4,16 +4,49 @@
 @use '../../Style/Partials/Variables.scss' as *;
 
 .heading {
-    color: white;
-    background-color: rgb(199, 86, 26);
-    font-size: 16px;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    padding-left: 16px;
-  }
+  color: white;
+  background-color: rgb(199, 86, 26);
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+}
 .create {
-margin: $mobile-spacing;
-  
+  margin: $mobile-spacing;
 
+  &__event-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    @include label;
+  }
+
+  &__event {
+    @include input;
+  }
+
+  &__date {
+    @include inputDate;
+  }
+
+  &__description {
+    @include textarea;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  &__publish-event {
+    @include publishButton;
+  }
+
+  &__cancel-button {
+    @include cancelButton;
+  }
 }

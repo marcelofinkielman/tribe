@@ -12,14 +12,14 @@ function NavBar() {
   return (
     <>
     <div className="navBar">
-      <Link to="/">
+      
         <div className="navBar__logo-container1">
-          <img className="navBar__logo" src={Tlogo} alt="inStock logo" />
+         <Link to="/"> <img className="navBar__logo" src={Tlogo} alt="inStock logo" /> </Link>
         </div>
         <div className="navBar__logo-container2">
-          <img className="navBar__logo" src={Logo} alt="inStock logo" />
+        <Link to="/"><img className="navBar__logo" src={Logo} alt="inStock logo" /></Link>
         </div>
-      </Link>
+     
       <div className="navBar__linksAndProfiles">
         <img className="navBar__profile" src={Profile} alt="inStock logo" />
         <div className="navBar__links">

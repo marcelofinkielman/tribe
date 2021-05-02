@@ -9,37 +9,29 @@
 		]
 	},
 	{
-		"id": "6309b85d-c999-49d3-a49c-37c9bff5d778",
-		"event": "test",
+		"id": "5c41fd26-7534-415c-b806-feb208dd4f9b",
+		"event": "cooking lessons",
 		"date": "2021-05-01 09:00:00 UTC",
-		"description": "hauhduashisoad",
+		"description": "learn the basics of bbq",
 		"tags": [
-			"test"
+			"barbeque"
 		]
 	},
 	{
-		"id": "4e1348f8-2543-4d19-9ac8-339d65de4a61",
-		"event": "test",
+		"id": "ec4f2eed-b889-471e-bf38-651d6431ba27",
+		"event": "fitness",
 		"date": "2021-05-01 09:00:00 UTC",
-		"description": "hauhduashisoad",
+		"description": "zumba for begginers",
 		"tags": [
-			"cook"
+			"zumba"
 		]
 	},
 	{
-		"id": "3db9512a-a8f0-42d9-982b-5d3cc0eca6ba",
+		"id": "6ceb5896-583e-40ae-bcf5-40e52385b660",
 		"event": "test",
 		"date": "2021-05-01 09:00:00 UTC",
 		"description": "hauhduashisoad",
-		"tags": [
-			"soccer"
-		]
-	},
-	{
-		"id": "67ce82ef-d8a0-4bfd-9dc0-b319f79a4dd9",
-		"event": "test",
-		"date": "2021-05-01 09:00:00 UTC",
-		"description": "hauhduashisoad",
+		"organizer": "Marcelo",
 		"tags": [
 			"test"
 		]
