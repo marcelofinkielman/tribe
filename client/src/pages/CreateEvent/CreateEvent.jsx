@@ -1,9 +1,13 @@
 import React from 'react'
 import "./CreateEvent.scss"
-import CreateInput from '../../components/CreateInput/CreateInput'
-import { Link } from 'react-router-dom'
-import CancelButton from '../../components/CancelButton/CancelButton'
-import SubmitButton from '../../components/SubmitButton/SubmitButton'
+import axios from "axios"
+import Book from "../../assets/images/book.jpg"
+import Cook from "../../assets/images/cooking.jpg"
+import Code from "../../assets/images/coding.jpg"
+import fitness from "../../assets/images/fitness.jpg"
+
+const APIURL = "http://localhost:8080/create"
+
 
 class CreateEvent extends React.Component {
 
@@ -17,20 +21,35 @@ class CreateEvent extends React.Component {
     tags: [],
 
   }
-
-  handleChange = (event) => {
-    event.preventDefault();
-
+  //event for the cancel button
+  cancelOnClick = (e) => {
+    e.preventDefault();
+    this.props.history.push('/')
   };
 
-
-
+  handleOnSubmit = (e) => {
+    e.preventDefault();
+    axios.post(`${APIURL}`, {
+      event: e.target.event.value,
+      date: e.target.date.value,
+      organizer: e.target.organizer.value,
+      tags: e.target.tags.value,
+      description: e.target.description.value,
+    })
+      .then(res => {
+        console.log(e.target)
+        console.log(res.data);
+        this.props.history.push('/')
+        alert('Event Created!')
+      })
+      .catch(err => {
+        console.error(err)
+      })
+  };
   render() {
-    //event for the cancel button
-    const cancelOnClick = (e) => {
-      e.preventDefault();
-      this.props.history.push('/')
-    };
+
+
+
 
     return (
       <>
@@ -38,11 +57,15 @@ class CreateEvent extends React.Component {
           <h2>CREATE AN EVENT</h2>
         </div>
         <div className="create">
-          <form className="create__form">
+          <form className="create__form"
+            onSubmit={(e) => {
+              this.handleOnSubmit(e)
+            }}
+          >
             <div className="create__event-inputs">
               <label className="create__label">Event name</label>
               <input className="create__event"
-                name="title"
+                name="event"
                 type="text"
                 placeholder="Event name"
                 value={this.state.event} onChange={(e) => {
@@ -52,7 +75,7 @@ class CreateEvent extends React.Component {
               <label className="create__label">Date</label>
               <input className="create__date"
                 name="date"
-                type="date"
+                type="datetime-local"
                 placeholder="date"
                 value={this.state.date} onChange={(e) => {
                   this.setState({ date: e.target.value })
@@ -67,9 +90,18 @@ class CreateEvent extends React.Component {
                   this.setState({ organizer: e.target.value })
                   e.preventDefault()
                 }} />
+              <label className="create__label">Tags</label>
+              <input className="create__event"
+                name="tags"
+                type="links"
+                placeholder="interests"
+                value={this.state.tags} onChange={(e) => {
+                  this.setState({ tags: e.target.value })
+                  e.preventDefault()
+                }} />
               <label className='create__label'> Add a description for your event</label>
-              <textarea name='description'
-                className='create__description'
+              <textarea className='create__description'
+                name='description'
                 rows='15'
                 placeholder='Add the description of your event'
                 value={this.state.description}
@@ -79,10 +111,10 @@ class CreateEvent extends React.Component {
                 }} />
             </div>
             <div className="create__buttons">
-            <button type="submit" className="create__publish-event">Create</button>
-            <button type="button"
-              onClick={(e) => { cancelOnClick(e) }} className="create__cancel-button">Cancel</button>
-              </div>
+              <button type="submit" className="create__publish-event">Create</button>
+              <button type="button"
+                onClick={(e) => { this.cancelOnClick(e) }} className="create__cancel-button">Cancel</button>
+            </div>
           </form>
         </div>
       </>

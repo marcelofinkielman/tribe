@@ -17,7 +17,7 @@
   }
 
   &__events {
-    width: 100%;
+    width: 50%;
   }
 
   &__picture {
@@ -33,7 +33,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border-bottom: 1px solid gray;
     padding-bottom: 15px;
     padding-left: $mobile-spacing;
   }

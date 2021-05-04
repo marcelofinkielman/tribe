@@ -35,5 +35,21 @@
 		"tags": [
 			"test"
 		]
+	},
+	{
+		"id": "278c3935-1a8f-4b3d-b255-e67839566005",
+		"event": "Cooking class",
+		"date": "2021-05-17T01:50",
+		"description": "learn the basics of barbeque!!!",
+		"organizer": "Marcelo",
+		"tags": "barbeque"
+	},
+	{
+		"id": "e2505a94-1447-45eb-b6d7-623e94cce72e",
+		"event": "fdfdsada",
+		"date": "2021-05-12T12:48",
+		"description": "Learn the basics of barbeque with an amazing class that would only cost 2 dollars!",
+		"organizer": "sadasdasd",
+		"tags": "adadasdasd"
 	}
 ]

@@ -49,15 +49,6 @@ app.get('/tags', (req, res) => {
 })
 
 app.post("/create", function (req, res) {
-  //validate the request object
-  if (!req.body.event ||
-    !req.body.date ||
-    !req.body.description ||
-    !req.body.organizer ||
-    !req.body.tags) {
-    return res.status(400).send({ error: 'Missing data' })
-  }
-
   let { event, date, description, organizer, tags } = req.body
 
   //get all events
@@ -72,15 +63,24 @@ app.post("/create", function (req, res) {
     organizer,
     tags
   }
-  events.push(newEvent)
+  //validate the request object
+  if (!req.body.event ||
+    !req.body.date ||
+    !req.body.description ||
+    !req.body.organizer ||
+    !req.body.tags) {
+    return res.status(400).send({ error: 'Missing data' })
+  } else {
+    //load all events into a variable
+    events.push(newEvent)
 
   //save (save on disk/file) the list of events including the new one
   saveEvents(events)
   res.status(200).send(newEvent)
+   
+  }
+ 
 })
-
-
-
 
 
 app.listen(port, () => console.log(`Express listening on port ${port}`));

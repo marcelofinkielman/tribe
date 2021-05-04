@@ -13,7 +13,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <BrowserRouter>
-        <div >
+        <div className="app__test">
           <NavBar />
           
         </div>
@@ -22,6 +22,7 @@ class App extends React.Component {
             <Route path="/" exact component={MyPage} />
             <Route path="/profile" exact component={MyPage} />
             <Route path="/create" exact component={CreateEvent} />
+            <Route path='/events/:tag' render={(routerProps) => <MyPage videoId={routerProps.match.params.id} />}/>
             <Route component={PageNotFound} />
             
           </Switch>
