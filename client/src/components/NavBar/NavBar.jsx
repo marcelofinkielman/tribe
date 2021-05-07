@@ -8,31 +8,34 @@ import Profile from "../../assets/images/profile.jpg"
 
 
 function NavBar() {
-  
+
   return (
     <>
-    <div className="navBar">
-      
+      <div className="navBar">
+
         <div className="navBar__logo-container1">
-         <Link to="/"> <img className="navBar__logo" src={Tlogo} alt="inStock logo" /> </Link>
+          <Link to="/login"> <img className="navBar__logo" src={Tlogo} alt="inStock logo" />
+          </Link>
         </div>
         <div className="navBar__logo-container2">
-        <Link to="/"><img className="navBar__logo" src={Logo} alt="inStock logo" /></Link>
+          <Link to="/"><img className="navBar__logo" src={Logo} alt="inStock logo" />
+          </Link>
         </div>
-     
-      <div className="navBar__linksAndProfiles">
-        <img className="navBar__profile" src={Profile} alt="inStock logo" />
-        <div className="navBar__links">
-          <Link to="/profile" className="navBar__link">
-            My Page
+        <div className="navBar__linksAndProfiles">
+          <Link to="/interests">
+            <img className="navBar__profile" src={Profile} alt="inStock logo" />
+            </Link>
+          <div className="navBar__links">
+            <Link to="/profile" className="navBar__link">
+              My Page
         </Link>
-          <Link to="/create" className="navBar__link">
-            Create event
+            <Link to="/create" className="navBar__link">
+              Create event
         </Link>
+          </div>
         </div>
       </div>
-    </div>
-     </>
+    </>
   );
 }
 

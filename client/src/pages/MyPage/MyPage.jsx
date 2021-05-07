@@ -40,7 +40,6 @@ class MyPage extends React.Component {
   componentDidUpdate = () => {
     
   }
-  
 
   handleAttend = (e, event) => {
     e.preventDefault();

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.scss"
 import LoginPage from "./pages/LoginPage/LoginPage.jsx"
 import MyPage from "./pages/MyPage/MyPage.jsx"
+import MyInterests from "./pages/MyInterests/MyInterests.jsx"
 import CreateEvent from "./pages/CreateEvent/CreateEvent.jsx"
 import PageNotFound from "./pages/404NotFound/PageNotFound.jsx";
 import NavBar from "./components/NavBar/NavBar";
@@ -18,17 +19,15 @@ class App extends React.Component {
           <BrowserRouter>
             <div className="app__nav">
               <NavBar />
-
             </div>
-
-
             <div className="app__body">
               <Switch>
-                <Route path="/" exact component={LoginPage} />
-                <Route path="/profile" component={MyPage} />
-                <Route path="/create" component={CreateEvent} />
+                <Route path="/login" exact component={ LoginPage } />
+                <Route path="/profile" component={ MyPage } />
+                <Route path="/interests" component={ MyInterests } />
+                <Route path="/create" component={ CreateEvent } />
                 <Route path='/events/:tag' render={(routerProps) => <MyPage videoId={routerProps.match.params.id} />} />
-                <Route component={PageNotFound} />
+                <Route component={ PageNotFound } />
               </Switch>
             </div>
 

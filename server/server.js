@@ -7,10 +7,16 @@ app.use(cors());
 app.use(express.json());
 
 const filePath = './data/events.json'
+const userFilePath = './data/users.json'
 
 const port = 8080;
 function getEvents() {
   const data = fs.readFileSync(filePath)
+  return JSON.parse(data)
+}
+
+function getUser() {
+  const data = fs.readFileSync(userFilePath)
   return JSON.parse(data)
 }
 
@@ -19,9 +25,20 @@ function saveEvents(events) {
   fs.writeFileSync(filePath, json)
 }
 
+function saveUser(events) {
+  let json = JSON.stringify(events, null, '\t')
+  fs.writeFileSync(filePath, json)
+}
+
 //get all events
 app.get('/events', (req, res) => {
-  res.status(200).send(getEvents())
+let userActivities = getUser()[0].activities
+let allEvents = getEvents()
+let filteredEvents = allEvents.filter(event => event.tags.some(tag => userActivities.includes(tag)))
+console.log(filteredEvents)
+ 
+console.log(userActivities)
+  res.status(200).send(filteredEvents)
 })
 
 //get alls events for an specific tag
@@ -62,10 +79,11 @@ app.post("/create", function (req, res) {
     description,
     zoom,
     organizer,
-    tags,
+    tags: tags.replace(/\s/g, '').split(","),
     attend: false
   }
-  
+  console.log(tags)
+  console.log(tags.replace(/\s/g, '').split(","))
   //validate the request object
   if (!req.body.event ||
     !req.body.date ||

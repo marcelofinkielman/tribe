@@ -6,8 +6,49 @@
 		"description": "testest",
 		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjam",
 		"organizer": "Marcelo",
-		"tags": "dasdasdasdad",
+		"tags": [
+			"dasdasdasdad"
+		],
+		"attend": false
+	},
+	{
+		"id": "4bf6b737-ec67-4d76-b078-5602805adfc8",
+		"event": "bbq 🥓🍖🥩",
+		"date": "2021-05-07T10:08",
+		"description": "test",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjam",
+		"organizer": "Marcelo",
+		"tags": [
+			"barbeque"
+		],
+		"attend": false
+	},
+	{
+		"id": "290b8cf7-3eb3-49c7-8af1-1832f7baee95",
+		"event": "fdfdsada",
+		"date": "2021-05-07T12:02",
+		"description": "sadasd",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
+		"organizer": "Marcelo",
+		"tags": [
+			"hi",
+			"test",
+			"testing"
+		],
+		"attend": false
+	},
+	{
+		"id": "df037f3b-4305-4f3b-abcc-e92260a6a634",
+		"event": "asdasda",
+		"date": "2021-05-07T14:02",
+		"description": "sadsadasd",
+		"zoom": "dssdadasd",
+		"organizer": "dsadsad",
+		"tags": [
+			"adadas",
+			"hi",
+			"hieeweq"
+		],
 		"attend": false
 	}
-	
 ]

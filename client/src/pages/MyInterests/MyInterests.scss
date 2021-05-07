@@ -1,0 +1,12 @@
+@use '../../Style/Partials/Global.scss' as *;
+@use '../../Style/Partials/Mixin.scss' as *;
+@use '../../Style/Partials/Typography.scss' as *;
+@use '../../Style/Partials/Variables.scss' as *;
+
+.interests {
+  margin: $mobile-spacing;
+  &__title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
