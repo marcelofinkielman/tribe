@@ -1,18 +1,20 @@
 [
 	{
 		"id": "d8afae92-6a42-49c5-9262-ae7cf76c0f9a",
-		"event": "fdfdsada",
+		"event": "book",
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/book.jpg?alt=media&token=8229fc9e-df8d-4248-a11f-fb00607f0d5f",
 		"date": "2021-05-06T20:36",
 		"description": "testest",
 		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjam",
 		"organizer": "Marcelo",
 		"tags": [
-			"dasdasdasdad"
+			"book"
 		],
 		"attend": false
 	},
 	{
 		"id": "4bf6b737-ec67-4d76-b078-5602805adfc8",
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/book.jpg?alt=media&token=8229fc9e-df8d-4248-a11f-fb00607f0d5f",
 		"event": "bbq 🥓🍖🥩",
 		"date": "2021-05-07T10:08",
 		"description": "test",
@@ -25,21 +27,21 @@
 	},
 	{
 		"id": "290b8cf7-3eb3-49c7-8af1-1832f7baee95",
-		"event": "fdfdsada",
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/book.jpg?alt=media&token=8229fc9e-df8d-4248-a11f-fb00607f0d5f",
+		"event": "coding",
 		"date": "2021-05-07T12:02",
 		"description": "sadasd",
 		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
 		"organizer": "Marcelo",
 		"tags": [
-			"hi",
-			"test",
-			"testing"
+			"JS"
 		],
 		"attend": false
 	},
 	{
 		"id": "df037f3b-4305-4f3b-abcc-e92260a6a634",
 		"event": "asdasda",
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/book.jpg?alt=media&token=8229fc9e-df8d-4248-a11f-fb00607f0d5f",
 		"date": "2021-05-07T14:02",
 		"description": "sadsadasd",
 		"zoom": "dssdadasd",
@@ -50,5 +52,18 @@
 			"hieeweq"
 		],
 		"attend": false
+	},
+	{
+		"id": "a31f2f71-8f41-4c5c-b774-65a0bfbca0f7",
+		"event": "fitness",
+		"date": "2021-05-07T14:15",
+		"description": "test",
+		"zoom": "test",
+		"organizer": "Marcelo",
+		"tags": [
+			"test"
+		],
+		"attend": false,
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/fitness.jpg?alt=media&token=c00624d6-8c3e-420a-81a0-7ca632af9b32"
 	}
 ]

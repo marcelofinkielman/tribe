@@ -15,9 +15,9 @@ class MyPage extends React.Component {
     currentEvent: {}
   }
 
-  
+
   componentDidMount() {
-  
+
     axios.get(APIURL)
       .then(res => {
         let attending = []
@@ -31,14 +31,14 @@ class MyPage extends React.Component {
         })
         this.setState({ attending, notAttending })
       })
-      
+
       .catch(err => {
         console.error(err)
       })
-      
+
   }
   componentDidUpdate = () => {
-    
+
   }
 
   handleAttend = (e, event) => {
@@ -46,7 +46,7 @@ class MyPage extends React.Component {
     let newNotAttendingList = this.state.notAttending.filter((notAttendingEvent) => {
       return notAttendingEvent.id !== event.id
     })
-    let newAttendingList = [ ...this.state.attending ]
+    let newAttendingList = [...this.state.attending]
     newAttendingList.push(event)
     this.setState({
       notAttending: newNotAttendingList,
@@ -69,6 +69,7 @@ class MyPage extends React.Component {
                 <EventStructure
                   key={event.id}
                   event={event.event}
+                  img={event.img}
                   date={event.date}
                   organizer={event.organizer}
                   tags={event.tags}
@@ -76,7 +77,7 @@ class MyPage extends React.Component {
                   button={event.attend}
                   zoom={event.zoom}
                   attendButtonClick={(e) => this.handleNotAttend(e, event)}
-                  
+
                 />
               )
           }
@@ -91,6 +92,7 @@ class MyPage extends React.Component {
               .map((event) =>
                 <EventStructure
                   key={event.id}
+                  img={event.img}
                   event={event.event}
                   date={event.date}
                   organizer={event.organizer}
@@ -99,7 +101,7 @@ class MyPage extends React.Component {
                   zoom={event.zoom}
                   button={event.attend}
                   attendButtonClick={(e) => this.handleAttend(e, event)}
-                  
+
                 />
               )
           }

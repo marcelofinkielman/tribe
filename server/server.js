@@ -25,10 +25,10 @@ function saveEvents(events) {
   fs.writeFileSync(filePath, json)
 }
 
-function saveUser(events) {
+/* function saveUser(events) {
   let json = JSON.stringify(events, null, '\t')
   fs.writeFileSync(filePath, json)
-}
+} */
 
 //get all events
 app.get('/events', (req, res) => {
@@ -80,7 +80,8 @@ app.post("/create", function (req, res) {
     zoom,
     organizer,
     tags: tags.replace(/\s/g, '').split(","),
-    attend: false
+    attend: false,
+    img: "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/fitness.jpg?alt=media&token=c00624d6-8c3e-420a-81a0-7ca632af9b32"
   }
   console.log(tags)
   console.log(tags.replace(/\s/g, '').split(","))

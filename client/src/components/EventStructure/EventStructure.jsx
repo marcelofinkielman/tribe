@@ -2,13 +2,13 @@ import React from 'react'
 import './EventStructure.scss'
 import Cooking from "../../assets/images/cooking.jpg"
 
-function EventStructure({ event, date, organizer, tags, description, button, attendButtonClick, zoom }) {
+function EventStructure({ event, date, organizer, tags, description, button, attendButtonClick, zoom, img }) {
   /* console.log(date)
   const eventDate = new Date(date.timestamp) */
   return (
     <div className="event">
       <div className="event__pictures">
-        <img className="event__picture" src={Cooking} alt="book"></img>
+        <img className="event__picture" src={img} alt="book"></img>
       </div>
       <div className="event__description">
         <h4>Event: <span className="event__element">{event}</span></h4>
