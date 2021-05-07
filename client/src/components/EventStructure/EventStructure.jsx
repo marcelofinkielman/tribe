@@ -16,7 +16,9 @@ function EventStructure({ event, date, organizer, tags, description, button, att
         <h4>Created by: <span className="event__element">{organizer}</span></h4>
         <h4>Tags: <span className="event__element">{tags}</span></h4>
         <h4>Description: <span className="event__elementD">{description}</span></h4>
+        <div className="event__zoom">
         <h4>Zoom Channel: <span className="event__elementZ">{zoom}</span></h4>
+        </div>
         <button className="event__button" onClick={attendButtonClick}>Attend{button}</button>
       </div>
     </div>

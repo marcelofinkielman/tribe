@@ -7,12 +7,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   &__form {
     display: block;
     position: relative;
     width: 100%;
     :after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       top: -5px;
@@ -20,10 +21,12 @@
       right: -5px;
       bottom: -5px;
       z-index: -1;
-      background-image: linear-gradient(to bottom right, #FFCE00, #FE4880);
-      
+      background-image: linear-gradient(to bottom right, #ffce00, #fe4880);
+
+      @include tablet {
+        border-radius: 10px
+      }
     }
-    
   }
   &__inner-form {
     position: relative;
@@ -33,7 +36,35 @@
     height: 200px;
     padding: 30px;
     
-    
-    
+    @include tablet {
+      width: 40%;
+    height: 200px;
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 10px
+    }
+  }
+
+  &__label {
+    @include label;
+    margin-bottom: 18px;
+    margin-right: 10px;
+  }
+
+  &__input-username {
+    @include input;
+    margin-top: 8px;
+  }
+
+  &__input-password {
+    @include input;
+    margin-top: 8px;
+  }
+
+  &__button {
+    @include attendButton;
+    margin-top: -5px;
   }
 }

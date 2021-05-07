@@ -76,6 +76,7 @@
   height: 40px;
   border-radius: 10px;
   margin-bottom: 20px;
+  padding-left: 5px;
   border: 2px solid rgb(255, 89, 0);
   &:hover {
     background-color: rgb(237, 163, 84);
@@ -134,4 +135,19 @@
   margin-left: 20px;
   cursor: pointer;
   border: 1px dotted orange;
+}
+
+//smaller button for attend to events
+@mixin attendButton {
+  color: white;
+  height: 25px;
+  width: 80px;
+  border-radius: 8px;
+  border: 0;
+  background-color: rgb(199, 86, 26);
+  margin-top: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(213, 115, 11);
+  }
 }

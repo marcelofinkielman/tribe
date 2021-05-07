@@ -20,19 +20,15 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 15px;
-  padding-left: $mobile-spacing;
-  
+  padding: $mobile-spacing;
+
+
 }
 
 &__button {
-  color: white;
-  height: 25px;
-  width: 80px;
-  border-radius: 8px;
-  border: 0;
-  background-color: rgb(199, 86, 26);
-  margin-top: 10px;
-}
+  @include attendButton;
+
+};
 &__element {
   color: black;
   font-weight: 100px;
@@ -50,6 +46,9 @@
 &__elementZ {
   color: blue;
   text-decoration: underline;
+  padding-right: 20px;
 }
 
+
 }
+
