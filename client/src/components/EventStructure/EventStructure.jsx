@@ -2,20 +2,23 @@ import React from 'react'
 import './EventStructure.scss'
 import Cooking from "../../assets/images/cooking.jpg"
 
-function EventStructure({event, date, organizer, tags, description}) {
+function EventStructure({ event, date, organizer, tags, description, button, attendButtonClick, zoom }) {
+  /* console.log(date)
+  const eventDate = new Date(date.timestamp) */
   return (
-    <div>
-      <div className="myPage__pictures">
-      <img className="myPage__picture" src={Cooking} alt="book"></img>
-          </div>
-          <div className="myPage__description">
-            <h4>Event: {event}</h4>
-            <h4>Date and time: {date}</h4>
-            <h4>Created by: {organizer}</h4>
-            <h4>Tags: {tags}</h4>
-            <h4>Description: {description}</h4>  
-            <button className="myPage__button">Attend</button>
-          </div>
+    <div className="event">
+      <div className="event__pictures">
+        <img className="event__picture" src={Cooking} alt="book"></img>
+      </div>
+      <div className="event__description">
+        <h4>Event: <span className="event__element">{event}</span></h4>
+        <h4>Date and time: <span className="event__element">{date/* {eventDate.toLocaleDateString()} */}</span></h4>
+        <h4>Created by: <span className="event__element">{organizer}</span></h4>
+        <h4>Tags: <span className="event__element">{tags}</span></h4>
+        <h4>Description: <span className="event__elementD">{description}</span></h4>
+        <h4>Zoom Channel: <span className="event__elementZ">{zoom}</span></h4>
+        <button className="event__button" onClick={attendButtonClick}>Attend{button}</button>
+      </div>
     </div>
   )
 }

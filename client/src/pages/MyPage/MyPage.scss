@@ -4,20 +4,22 @@
 @use '../../Style/Partials/Variables.scss' as *;
 
 .myPage {
-
   &__heading {
     color: white;
     background-color: rgb(199, 86, 26);
     font-size: 16px;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
     padding-left: $mobile-spacing;
-
+    @include tablet {
+      height: 58px;
+      font-size: 25px;
+      padding-top: 10px;
+      justify-content: center;
+    }
   }
 
   &__events {
     width: 50%;
+    margin-bottom: 100px;
   }
 
   &__picture {
@@ -36,13 +38,11 @@
     padding-bottom: 15px;
     padding-left: $mobile-spacing;
   }
-
-  &__button {
-    color: white;
-    height: 25px;
-    width: 80px;
-    border-radius: 8px;
-    border: 0;
-    background-color: rgb(199, 86, 26);
+  &__suggestions {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
   }
+
 }

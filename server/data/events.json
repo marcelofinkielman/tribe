@@ -1,55 +1,12 @@
 [
 	{
-		"id": "ef5e2c69-e7ff-44ad-9639-b642423a7b6a",
-		"event": "test",
-		"date": "2021-05-01 09:00:00 UTC",
-		"description": "hauhduashisoad",
-		"tags": [
-			"test"
-		]
-	},
-	{
-		"id": "5c41fd26-7534-415c-b806-feb208dd4f9b",
-		"event": "cooking lessons",
-		"date": "2021-05-01 09:00:00 UTC",
-		"description": "learn the basics of bbq",
-		"tags": [
-			"barbeque"
-		]
-	},
-	{
-		"id": "ec4f2eed-b889-471e-bf38-651d6431ba27",
-		"event": "fitness",
-		"date": "2021-05-01 09:00:00 UTC",
-		"description": "zumba for begginers",
-		"tags": [
-			"zumba"
-		]
-	},
-	{
-		"id": "6ceb5896-583e-40ae-bcf5-40e52385b660",
-		"event": "test",
-		"date": "2021-05-01 09:00:00 UTC",
-		"description": "hauhduashisoad",
-		"organizer": "Marcelo",
-		"tags": [
-			"test"
-		]
-	},
-	{
-		"id": "278c3935-1a8f-4b3d-b255-e67839566005",
-		"event": "Cooking class",
-		"date": "2021-05-17T01:50",
-		"description": "learn the basics of barbeque!!!",
-		"organizer": "Marcelo",
-		"tags": "barbeque"
-	},
-	{
-		"id": "e2505a94-1447-45eb-b6d7-623e94cce72e",
+		"id": "d8afae92-6a42-49c5-9262-ae7cf76c0f9a",
 		"event": "fdfdsada",
-		"date": "2021-05-12T12:48",
-		"description": "Learn the basics of barbeque with an amazing class that would only cost 2 dollars!",
-		"organizer": "sadasdasd",
-		"tags": "adadasdasd"
+		"date": "2021-05-06T20:36",
+		"description": "testest",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3Myelh5Mzd6YmE2TEFKZz09",
+		"organizer": "Marcelo",
+		"tags": "dasdasdasdad",
+		"attend": false
 	}
 ]

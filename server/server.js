@@ -49,7 +49,7 @@ app.get('/tags', (req, res) => {
 })
 
 app.post("/create", function (req, res) {
-  let { event, date, description, organizer, tags } = req.body
+  let { event, date, description, organizer, tags, zoom } = req.body
 
   //get all events
   let events = getEvents()
@@ -60,14 +60,18 @@ app.post("/create", function (req, res) {
     event,
     date,
     description,
+    zoom,
     organizer,
-    tags
+    tags,
+    attend: false
   }
+  
   //validate the request object
   if (!req.body.event ||
     !req.body.date ||
     !req.body.description ||
     !req.body.organizer ||
+    !req.body.zoom ||
     !req.body.tags) {
     return res.status(400).send({ error: 'Missing data' })
   } else {

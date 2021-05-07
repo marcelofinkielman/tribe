@@ -1,10 +1,6 @@
 import React from 'react'
 import "./CreateEvent.scss"
 import axios from "axios"
-import Book from "../../assets/images/book.jpg"
-import Cook from "../../assets/images/cooking.jpg"
-import Code from "../../assets/images/coding.jpg"
-import fitness from "../../assets/images/fitness.jpg"
 
 const APIURL = "http://localhost:8080/create"
 
@@ -18,13 +14,14 @@ class CreateEvent extends React.Component {
     img: "",
     organizer: "",
     description: "",
+    zoom: "",
     tags: [],
 
   }
   //event for the cancel button
   cancelOnClick = (e) => {
     e.preventDefault();
-    this.props.history.push('/')
+    this.props.history.push('/profile')
   };
 
   handleOnSubmit = (e) => {
@@ -33,13 +30,14 @@ class CreateEvent extends React.Component {
       event: e.target.event.value,
       date: e.target.date.value,
       organizer: e.target.organizer.value,
+      zoom: e.target.zoom.value,
       tags: e.target.tags.value,
       description: e.target.description.value,
     })
       .then(res => {
         console.log(e.target)
         console.log(res.data);
-        this.props.history.push('/')
+        this.props.history.push('/profile')
         alert('Event Created!')
       })
       .catch(err => {
@@ -97,6 +95,15 @@ class CreateEvent extends React.Component {
                 placeholder="interests"
                 value={this.state.tags} onChange={(e) => {
                   this.setState({ tags: e.target.value })
+                  e.preventDefault()
+                }} />
+                <label className="create__label">Zoom Channel</label>
+              <input className="create__event"
+                name="zoom"
+                type="text"
+                placeholder="Place your zoom channel here"
+                value={this.state.zoom} onChange={(e) => {
+                  this.setState({ zoom: e.target.value })
                   e.preventDefault()
                 }} />
               <label className='create__label'> Add a description for your event</label>
