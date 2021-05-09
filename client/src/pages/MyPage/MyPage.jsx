@@ -82,6 +82,9 @@ class MyPage extends React.Component {
               )
           }
         </div>
+        <div className="myPage__divisor-parent">
+        <div className="myPage__divisor"></div>
+        </div>
         <div className="myPage__heading">
           <h2>SUGGESTIONS</h2>
         </div>

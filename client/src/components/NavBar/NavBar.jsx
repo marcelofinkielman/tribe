@@ -18,7 +18,7 @@ function NavBar() {
           </Link>
         </div>
         <div className="navBar__logo-container2">
-          <Link to="/"><img className="navBar__logo" src={Logo} alt="inStock logo" />
+          <Link to="/login"><img className="navBar__logo" src={Logo} alt="inStock logo" />
           </Link>
         </div>
         <div className="navBar__linksAndProfiles">

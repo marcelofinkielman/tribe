@@ -1,69 +1,42 @@
 [
 	{
-		"id": "d8afae92-6a42-49c5-9262-ae7cf76c0f9a",
-		"event": "book",
-		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/book.jpg?alt=media&token=8229fc9e-df8d-4248-a11f-fb00607f0d5f",
-		"date": "2021-05-06T20:36",
-		"description": "testest",
-		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjam",
-		"organizer": "Marcelo",
-		"tags": [
-			"book"
-		],
-		"attend": false
-	},
-	{
 		"id": "4bf6b737-ec67-4d76-b078-5602805adfc8",
-		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/book.jpg?alt=media&token=8229fc9e-df8d-4248-a11f-fb00607f0d5f",
-		"event": "bbq 🥓🍖🥩",
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/cooking.jpg?alt=media&token=2a1e1a6d-b5d3-444e-b167-359d2e1a7cf0",
+		"event": "BBQ class 🥓🍖🥩",
 		"date": "2021-05-07T10:08",
-		"description": "test",
-		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjam",
-		"organizer": "Marcelo",
-		"tags": [
-			"barbeque"
-		],
-		"attend": false
-	},
-	{
-		"id": "290b8cf7-3eb3-49c7-8af1-1832f7baee95",
-		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/book.jpg?alt=media&token=8229fc9e-df8d-4248-a11f-fb00607f0d5f",
-		"event": "coding",
-		"date": "2021-05-07T12:02",
-		"description": "sadasd",
+		"description": "Learn the basics of a delicious BQQ",
 		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
-		"organizer": "Marcelo",
+		"organizer": "Peter",
 		"tags": [
-			"JS"
+			"BBQ"
 		],
 		"attend": false
 	},
 	{
-		"id": "df037f3b-4305-4f3b-abcc-e92260a6a634",
-		"event": "asdasda",
-		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/book.jpg?alt=media&token=8229fc9e-df8d-4248-a11f-fb00607f0d5f",
-		"date": "2021-05-07T14:02",
-		"description": "sadsadasd",
-		"zoom": "dssdadasd",
-		"organizer": "dsadsad",
+		"id": "98bd950d-1dd0-4af5-a800-b07fa9909d20",
+		"event": "Book Club - The Shining📚📖📘",
+		"date": "2021-05-15T11:30",
+		"description": "Join us in a deep discussion about this Stephen King masterpiece! ",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
+		"organizer": "Lauren",
 		"tags": [
-			"adadas",
-			"hi",
-			"hieeweq"
-		],
-		"attend": false
-	},
-	{
-		"id": "a31f2f71-8f41-4c5c-b774-65a0bfbca0f7",
-		"event": "fitness",
-		"date": "2021-05-07T14:15",
-		"description": "test",
-		"zoom": "test",
-		"organizer": "Marcelo",
-		"tags": [
-			"test"
+			"Books"
 		],
 		"attend": false,
-		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/fitness.jpg?alt=media&token=c00624d6-8c3e-420a-81a0-7ca632af9b32"
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/book.jpg?alt=media&token=8229fc9e-df8d-4248-a11f-fb00607f0d5f"
+	},
+	{
+		"id": "1db6b0b0-87c9-4dbb-af0b-9085c990f16b",
+		"event": "Let's code!👨‍💻👩‍💻",
+		"date": "2021-05-14T10:30",
+		"description": "Join me next Friday, and learn the basics of JS.",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
+		"organizer": "Jon Barson",
+		"tags": [
+			"JavaScript",
+			"CSS"
+		],
+		"attend": false,
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/coding.jpg?alt=media&token=2f1b5206-8321-423d-9830-52255f6243d6"
 	}
 ]

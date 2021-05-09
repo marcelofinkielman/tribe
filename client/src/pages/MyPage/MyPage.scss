@@ -4,22 +4,46 @@
 @use '../../Style/Partials/Variables.scss' as *;
 
 .myPage {
+  background-color: $page-color;
   &__heading {
     color: white;
     background-color: rgb(199, 86, 26);
     font-size: 16px;
     padding-left: $mobile-spacing;
+    font-family: "Bebas";
+    
     @include tablet {
       height: 58px;
       font-size: 25px;
       padding-top: 10px;
+      display: flex;
       justify-content: center;
+      color: rgb(199, 86, 26);
+      background-color: $page-color;
+      
     }
   }
 
+  &__divisor-parent {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__divisor {
+    height: 0.5px;
+    width: 90%;
+  @include tablet {
+    border-top: 2px solid rgb(199, 86, 26);
+  }
+    
+  }
+
   &__events {
-    width: 50%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
   }
 
   &__picture {
@@ -40,9 +64,8 @@
   }
   &__suggestions {
     display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
   }
-
 }

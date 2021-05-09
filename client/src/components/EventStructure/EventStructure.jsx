@@ -1,10 +1,9 @@
 import React from 'react'
 import './EventStructure.scss'
-import Cooking from "../../assets/images/cooking.jpg"
+
 
 function EventStructure({ event, date, organizer, tags, description, button, attendButtonClick, zoom, img }) {
-  /* console.log(date)
-  const eventDate = new Date(date.timestamp) */
+  /* const eventDate = new Date(date.timestamp) */
   return (
     <div className="event">
       <div className="event__pictures">
@@ -19,7 +18,9 @@ function EventStructure({ event, date, organizer, tags, description, button, att
         <div className="event__zoom">
         <h4>Zoom Channel: <span className="event__elementZ">{zoom}</span></h4>
         </div>
-        <button className="event__button" onClick={attendButtonClick}>Attend{button}</button>
+        <div className="event__button-container">
+          <button className="event__button" onClick={attendButtonClick}>Attend{button}</button>
+        </div>
       </div>
     </div>
   )

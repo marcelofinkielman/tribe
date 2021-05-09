@@ -11,5 +11,5 @@ var firebaseConfig = {
   measurementId: "G-B86HTLBDVH"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+fire.initializeApp(firebaseConfig);
+fire.analytics();

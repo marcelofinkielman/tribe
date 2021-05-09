@@ -33,10 +33,9 @@ class CreateEvent extends React.Component {
       zoom: e.target.zoom.value,
       tags: e.target.tags.value,
       description: e.target.description.value,
+      
     })
       .then(res => {
-        console.log(e.target)
-        console.log(res.data);
         this.props.history.push('/profile')
         alert('Event Created!')
       })
