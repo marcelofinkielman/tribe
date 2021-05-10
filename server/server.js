@@ -81,7 +81,7 @@ app.post("/create", function (req, res) {
     organizer,
     tags: tags.replace(/\s/g, '').split(","),
     attend: false,
-    img: "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/fitness.jpg?alt=media&token=c00624d6-8c3e-420a-81a0-7ca632af9b32"
+    img: "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/book.jpg?alt=media&token=8229fc9e-df8d-4248-a11f-fb00607f0d5f"
   }
   //validate the request object
   if (!req.body.event ||

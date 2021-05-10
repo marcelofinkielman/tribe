@@ -36,6 +36,12 @@
     padding: $mobile-spacing;
   }
 
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   &__button-container {
     display: flex;
     justify-content: center;

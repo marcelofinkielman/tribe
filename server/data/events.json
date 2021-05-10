@@ -1,29 +1,16 @@
 [
 	{
 		"id": "4bf6b737-ec67-4d76-b078-5602805adfc8",
-		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/cooking.jpg?alt=media&token=2a1e1a6d-b5d3-444e-b167-359d2e1a7cf0",
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/pexels-artem-beliaikin-929192.jpg?alt=media&token=c3be9d87-edf9-4d95-a992-712bd42dc892",
 		"event": "BBQ class 🥓🍖🥩",
 		"date": "2021-05-07T10:08",
 		"description": "Learn the basics of a delicious BQQ",
 		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
 		"organizer": "Peter",
 		"tags": [
-			"BBQ"
+			"food"
 		],
 		"attend": false
-	},
-	{
-		"id": "98bd950d-1dd0-4af5-a800-b07fa9909d20",
-		"event": "Book Club - The Shining📚📖📘",
-		"date": "2021-05-15T11:30",
-		"description": "Join us in a deep discussion about this Stephen King masterpiece! ",
-		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
-		"organizer": "Lauren",
-		"tags": [
-			"Books"
-		],
-		"attend": false,
-		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/book.jpg?alt=media&token=8229fc9e-df8d-4248-a11f-fb00607f0d5f"
 	},
 	{
 		"id": "1db6b0b0-87c9-4dbb-af0b-9085c990f16b",
@@ -33,23 +20,74 @@
 		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
 		"organizer": "Jon Barson",
 		"tags": [
-			"JavaScript",
-			"CSS"
+			"coding"
 		],
 		"attend": false,
 		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/coding.jpg?alt=media&token=2f1b5206-8321-423d-9830-52255f6243d6"
 	},
 	{
-		"id": "9a961dbe-381f-438c-a49d-ba722409171f",
-		"event": "Zumba class",
-		"date": "2021-05-09T23:22",
-		"description": "Venha aprender Zumba com o mestre Marcelo",
+		"id": "003a7c8e-4940-4b41-afb9-5de82227b8f5",
+		"event": "Crossfit Class⛹️‍♀️🤸‍♀️🏋️‍♀️",
+		"date": "2021-05-18T14:45",
+		"description": "If you want to achieve a healthy life, join me for this introduction class!",
 		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
-		"organizer": "Marcelo",
+		"organizer": "Sean",
 		"tags": [
 			"fitness"
 		],
 		"attend": false,
-		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/fitness.jpg?alt=media&token=c00624d6-8c3e-420a-81a0-7ca632af9b32"
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/crossfit.jpg?alt=media&token=96fd3ac8-45de-4131-93bf-c73b21df95d7"
+	},
+	{
+		"id": "3ffea49a-3af9-48c8-ac20-91baed16cd09",
+		"event": "Wines - Introduction🍷",
+		"date": "2021-05-14T18:30",
+		"description": "In this first class, let's talk about the most commons wines.",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
+		"organizer": "Joshua Sepulveda",
+		"tags": [
+			"wine"
+		],
+		"attend": false,
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/wine.jpg?alt=media&token=f777fbc7-de11-418c-bbb7-caab7d86f789"
+	},
+	{
+		"id": "f3fbda65-85a5-4ec6-937d-10e4798668c1",
+		"event": "Crypto technology 💰💸",
+		"date": "2021-05-26T10:00",
+		"description": "Let's build a fully functional crypto website!",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
+		"organizer": "UX Designer",
+		"tags": [
+			"coding"
+		],
+		"attend": false,
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/pexels-daniel-dan-7712570.jpg?alt=media&token=bb098660-6356-42fe-b632-94b065557e28"
+	},
+	{
+		"id": "831a722c-90ca-40b5-8fd1-7c42f8403dd0",
+		"event": "Italian food - carbonara!",
+		"date": "2021-05-15T14:15",
+		"description": "I will teach you how to make a delicious and simple carbonara!",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
+		"organizer": "Marcelo",
+		"tags": [
+			"food"
+		],
+		"attend": false,
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/pexels-engin-akyurt-1435898.jpg?alt=media&token=2c5e3257-0373-472b-8816-84968cca852b"
+	},
+	{
+		"id": "39cb5302-c691-49b7-a2fa-8965a92b060e",
+		"event": "Home exercises",
+		"date": "2021-05-21T14:30",
+		"description": "Quarantine is not a reason not to exercise!",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
+		"organizer": "Paula",
+		"tags": [
+			"fitness"
+		],
+		"attend": false,
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/pushups.jpg?alt=media&token=f7c1178f-9e10-4bb4-a92d-54210509f834"
 	}
 ]
