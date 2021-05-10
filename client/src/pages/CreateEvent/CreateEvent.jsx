@@ -33,7 +33,7 @@ class CreateEvent extends React.Component {
       zoom: e.target.zoom.value,
       tags: e.target.tags.value,
       description: e.target.description.value,
-      
+
     })
       .then(res => {
         this.props.history.push('/profile')
@@ -52,6 +52,9 @@ class CreateEvent extends React.Component {
       <>
         <div className="heading">
           <h2>CREATE AN EVENT</h2>
+        </div>
+        <div className="heading__divisor-parent">
+          <div className="heading__divisor"></div>
         </div>
         <div className="create">
           <form className="create__form"
@@ -91,12 +94,12 @@ class CreateEvent extends React.Component {
               <input className="create__event"
                 name="tags"
                 type="links"
-                placeholder="interests"
+                placeholder="Interests"
                 value={this.state.tags} onChange={(e) => {
                   this.setState({ tags: e.target.value })
                   e.preventDefault()
                 }} />
-                <label className="create__label">Zoom Channel</label>
+              <label className="create__label">Zoom Channel</label>
               <input className="create__event"
                 name="zoom"
                 type="text"

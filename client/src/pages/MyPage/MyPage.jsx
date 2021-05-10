@@ -37,9 +37,6 @@ class MyPage extends React.Component {
       })
 
   }
-  componentDidUpdate = () => {
-
-  }
 
   handleAttend = (e, event) => {
     e.preventDefault();
@@ -54,12 +51,28 @@ class MyPage extends React.Component {
     })
   }
 
+  handleNotAttend = (e, event) => {
+    e.preventDefault();
+    let newAttendingList = this.state.attending.filter((attendingEvent) => {
+      return attendingEvent.id !== event.id
+    })
+    let newNotAttendingList = [...this.state.notAttending]
+    newNotAttendingList.push(event)
+    this.setState({
+      notAttending: newNotAttendingList,
+      attending: newAttendingList,
+    })
+  }
+
   render() {
 
     return (
       <div className="myPage">
         <div className="myPage__heading">
           <h2>EVENTS TO ATTEND</h2>
+        </div>
+        <div className="myPage__divisor-parent">
+        <div className="myPage__divisor"></div>
         </div>
         <div className="myPage__events">
           {
@@ -73,20 +86,21 @@ class MyPage extends React.Component {
                   date={event.date}
                   organizer={event.organizer}
                   tags={event.tags}
-                  description={event.description}
-                  button={event.attend}
+                  description={event.description}                 
                   zoom={event.zoom}
-                  attendButtonClick={(e) => this.handleNotAttend(e, event)}
+                  button={event.attend}
+                  NotattendButtonClick={(e) => this.handleNotAttend(e, event)}
 
                 />
               )
           }
         </div>
+        
+        <div className="myPage__heading">
+          <h2>SUGGESTED EVENTS</h2>
+        </div>
         <div className="myPage__divisor-parent">
         <div className="myPage__divisor"></div>
-        </div>
-        <div className="myPage__heading">
-          <h2>SUGGESTIONS</h2>
         </div>
         <div className="myPage__suggestions">
           {

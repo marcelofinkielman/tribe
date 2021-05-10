@@ -4,16 +4,29 @@
 @use '../../Style/Partials/Variables.scss' as *;
 
 .heading {
-  color: white;
-  background-color: rgb(199, 86, 26);
-  font-size: 16px;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  justify-content: center;
-  padding-left: 16px;
+  @include heading;
+  &__divisor-parent {
+    display: flex;
+    justify-content: center;
+  }
+  &__divisor {
+    height: 0.5px;
+    width: 90%;
+    @include tablet {
+      border-top: 1px solid orange;
+      opacity: 60%;
+    }
+  }
 }
 .create {
-  margin: $mobile-spacing;
+  padding: $mobile-spacing;
+  background-color: $page-color;
+  @include desktop {
+    display: flex;
+    justify-content: center;
+  }
 
   &__event-inputs {
     display: flex;

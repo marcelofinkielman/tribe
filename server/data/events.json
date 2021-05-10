@@ -38,5 +38,18 @@
 		],
 		"attend": false,
 		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/coding.jpg?alt=media&token=2f1b5206-8321-423d-9830-52255f6243d6"
+	},
+	{
+		"id": "9a961dbe-381f-438c-a49d-ba722409171f",
+		"event": "Zumba class",
+		"date": "2021-05-09T23:22",
+		"description": "Venha aprender Zumba com o mestre Marcelo",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
+		"organizer": "Marcelo",
+		"tags": [
+			"fitness"
+		],
+		"attend": false,
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/fitness.jpg?alt=media&token=c00624d6-8c3e-420a-81a0-7ca632af9b32"
 	}
 ]

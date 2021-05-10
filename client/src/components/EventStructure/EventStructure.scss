@@ -4,68 +4,63 @@
 @use '../../Style/Partials/Variables.scss' as *;
 
 .event {
- width: 360px;
- margin-top: 20px;
- 
- box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
- margin-right: 30px;
- margin-left: 30px;
-
- &__pictures {
-   display: flex;
-   justify-content: center;
- }
-  
-&__picture {
-  height: 180px;
+  width: 250px;
   margin-top: 20px;
-  width: 200px;
-  border-radius: 4px;
-  
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
+  background-color: white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin-right: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
 
-&__description {
-  color: black;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-bottom: 15px;
-  padding: $mobile-spacing;
-
-
-}
-
-&__button-container {
-  display: flex;
-  justify-content: center
-}
-
-&__button {
-  @include attendButton;
-
-};
-&__element {
-  color: rgb(199, 86, 26);
-  font-weight: 100px;
-  font-family: "Raleway";
-}
-
-&__elementD {
-  color: rgb(199, 86, 26);
-  font-family: "Raleway";
-  @include tablet {   
+  &__pictures {
+    display: flex;
+    justify-content: center;
   }
-  
+
+  &__picture {
+    height: 150px;
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 4px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  &__description {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    padding: $mobile-spacing;
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    @include attendButton;
+  }
+  &__element {
+    color: rgb(199, 86, 26);
+    font-weight: 100px;
+    font-family: "Raleway";
+  }
+
+  &__elementD {
+    color: rgb(199, 86, 26);
+    font-family: "Raleway";
+    @include tablet {
+    }
+  }
+
+  &__elementZ {
+    color: blue;
+    text-decoration: underline;
+    padding-right: 20px;
+    font-family: "Raleway";
+  }
 }
-
-&__elementZ {
-  color: blue;
-  text-decoration: underline;
-  padding-right: 20px;
-  font-family: "Raleway";
-}
-
-
-}
-

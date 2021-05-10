@@ -5,23 +5,9 @@
 
 .myPage {
   background-color: $page-color;
+
   &__heading {
-    color: white;
-    background-color: rgb(199, 86, 26);
-    font-size: 16px;
-    padding-left: $mobile-spacing;
-    font-family: "Bebas";
-    
-    @include tablet {
-      height: 58px;
-      font-size: 25px;
-      padding-top: 10px;
-      display: flex;
-      justify-content: center;
-      color: rgb(199, 86, 26);
-      background-color: $page-color;
-      
-    }
+    @include heading;
   }
 
   &__divisor-parent {
@@ -32,10 +18,10 @@
   &__divisor {
     height: 0.5px;
     width: 90%;
-  @include tablet {
-    border-top: 2px solid rgb(199, 86, 26);
-  }
-    
+    @include tablet {
+      border-top: 1px solid orange;
+      opacity: 60%;
+    }
   }
 
   &__events {
@@ -43,7 +29,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
   }
 
   &__picture {

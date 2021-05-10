@@ -2,7 +2,7 @@ import React from 'react'
 import './EventStructure.scss'
 
 
-function EventStructure({ event, date, organizer, tags, description, button, attendButtonClick, zoom, img }) {
+function EventStructure({ event, date, organizer, tags, description, attendButtonClick, zoom, img,notAttendButtonClick }) {
   /* const eventDate = new Date(date.timestamp) */
   return (
     <div className="event">
@@ -19,7 +19,10 @@ function EventStructure({ event, date, organizer, tags, description, button, att
         <h4>Zoom Channel: <span className="event__elementZ">{zoom}</span></h4>
         </div>
         <div className="event__button-container">
-          <button className="event__button" onClick={attendButtonClick}>Attend{button}</button>
+          <button className="event__button" onClick={attendButtonClick}>Attend</button>
+        </div>
+        <div className="event__button-container">
+          <button className="event__button" onClick={notAttendButtonClick}>Cancel</button>
         </div>
       </div>
     </div>

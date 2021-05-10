@@ -16,7 +16,6 @@
 
 // typography
 
-
 @mixin typo-button-header {
   font-size: $m-labels;
   font-family: "Titillium";
@@ -71,7 +70,7 @@
   justify-content: center;
   text-align: center;
 }
-//input 
+//input
 @mixin input {
   height: 40px;
   border-radius: 10px;
@@ -79,7 +78,7 @@
   padding-left: 5px;
   border: 2px solid rgb(255, 89, 0);
   &:hover {
-    background-color: rgb(237, 163, 84);
+    background-color: $hover-link;
   }
   &::placeholder {
     color: gray;
@@ -94,10 +93,9 @@
   margin-bottom: 20px;
   color: gray;
   &:hover {
-    background-color: rgb(237, 163, 84);
+    background-color: $hover-link;
     border-radius: 10px;
   }
-  
 }
 
 //label
@@ -114,7 +112,7 @@
   border: 2px solid rgb(255, 89, 0);
 }
 
-//publishButtons 
+//publishButtons
 @mixin publishButton {
   width: 180px;
   height: 40px;
@@ -122,11 +120,11 @@
   border: 1px dotted orange;
   cursor: pointer;
   &:hover {
-    background-color: rgb(213, 115, 11);
+    background-color: $hover-link;
   }
 }
 
-//cancelButton 
+//cancelButton
 @mixin cancelButton {
   width: 120px;
   height: 40px;
@@ -134,7 +132,7 @@
   border: 0;
   margin-left: 20px;
   cursor: pointer;
-  border: 1px dotted orange;
+  border: 0.5px dotted orange;
 }
 
 //smaller button for attend to events
@@ -144,10 +142,30 @@
   width: 80px;
   border-radius: 8px;
   border: 0;
-  background-color: rgb(199, 86, 26);
+  background-color: rgb(247, 100, 21);
   margin-top: 10px;
   cursor: pointer;
   &:hover {
-    background-color: rgb(213, 115, 11);
+    background-color: $hoverButton-color;
+  }
+}
+
+//heading
+@mixin heading {
+  color: white;
+  background-color: rgb(240, 157, 32);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-family: "Bebas";
+
+  @include tablet {
+    height: 58px;
+    font-size: 25px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: rgb(240, 157, 32);
+    background-color: $page-color;
   }
 }
