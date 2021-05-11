@@ -68,6 +68,7 @@ class CreateEvent extends React.Component {
                 name="event"
                 type="text"
                 placeholder="Event name"
+                autoComplete="off"
                 value={this.state.event} onChange={(e) => {
                   this.setState({ event: e.target.value })
                   e.preventDefault()
@@ -77,6 +78,7 @@ class CreateEvent extends React.Component {
                 name="date"
                 type="datetime-local"
                 placeholder="date"
+                autoComplete="off"
                 value={this.state.date} onChange={(e) => {
                   this.setState({ date: e.target.value })
                   e.preventDefault()
@@ -86,6 +88,7 @@ class CreateEvent extends React.Component {
                 name="organizer"
                 type="text"
                 placeholder="Your name"
+                autoComplete="off"
                 value={this.state.organizer} onChange={(e) => {
                   this.setState({ organizer: e.target.value })
                   e.preventDefault()
@@ -95,6 +98,7 @@ class CreateEvent extends React.Component {
                 name="tags"
                 type="links"
                 placeholder="Interests"
+                autoComplete="off"
                 value={this.state.tags} onChange={(e) => {
                   this.setState({ tags: e.target.value })
                   e.preventDefault()
@@ -113,6 +117,7 @@ class CreateEvent extends React.Component {
                 name='description'
                 rows='15'
                 placeholder='Add the description of your event'
+                autoComplete="off"
                 value={this.state.description}
                 onChange={(e) => {
                   this.setState({ description: e.target.value })

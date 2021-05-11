@@ -13,12 +13,15 @@
 
   @include tablet {
     width: 250px;
-    height: 90%;
+    height: 87%;
     padding-top: 38.39px;
     border-bottom: none;
     border-right: 0.1px solid orange;
     border-right: opacity(50%);
     justify-content: end;
+  }
+  @include desktop {
+    height: 87.5%;
   }
 
   &__logo-container1 {

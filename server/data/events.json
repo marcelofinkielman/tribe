@@ -3,7 +3,7 @@
 		"id": "4bf6b737-ec67-4d76-b078-5602805adfc8",
 		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/pexels-artem-beliaikin-929192.jpg?alt=media&token=c3be9d87-edf9-4d95-a992-712bd42dc892",
 		"event": "BBQ class 🥓🍖🥩",
-		"date": "2021-05-07T10:08",
+		"date": "2021-05-22T10:08",
 		"description": "Learn the basics of a delicious BQQ",
 		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
 		"organizer": "Peter",
@@ -20,7 +20,8 @@
 		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
 		"organizer": "Jon Barson",
 		"tags": [
-			"coding"
+			"coding",
+			"JavaScript"
 		],
 		"attend": false,
 		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/coding.jpg?alt=media&token=2f1b5206-8321-423d-9830-52255f6243d6"
@@ -85,9 +86,55 @@
 		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
 		"organizer": "Paula",
 		"tags": [
-			"fitness"
+			"fitness",
+			"crossfit"
 		],
 		"attend": false,
 		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/pushups.jpg?alt=media&token=f7c1178f-9e10-4bb4-a92d-54210509f834"
+	},
+	{
+		"id": "a2e3c31a-9b5b-407b-b650-492f4ec85e02",
+		"event": "Japanese food class",
+		"date": "2021-05-28T19:45",
+		"description": "I am a certified sushi man, and I will teach you how to make the perfect sushi!",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
+		"organizer": "Naruto",
+		"tags": [
+			"food",
+			"asian",
+			"sushi"
+		],
+		"attend": false,
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/pexels-rajesh-tp-2098085.jpg?alt=media&token=563e894b-3ab8-4e4d-a353-85c538d7330b"
+	},
+	{
+		"id": "a44664f2-462b-42da-870c-4385b8b5c4f0",
+		"event": "Hackathon - 24 coding",
+		"date": "2021-05-29T06:00",
+		"description": "Hello, I am trying to build a website, so I am gathering one UX designer, one Data Scientist, and me, a Web Dev so we can build a website in 24h.",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
+		"organizer": "Jackie",
+		"tags": [
+			"hackathon",
+			"website",
+			"coding"
+		],
+		"attend": false,
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/pexels-kevin-ku-577585.jpg?alt=media&token=eab55241-d5f5-4e30-b7c0-82ccacd8aa53"
+	},
+	{
+		"id": "53a5dbae-3aa8-43a3-8231-8c3dc7d7de3d",
+		"event": "Wine and talk",
+		"date": "2021-06-01T18:00",
+		"description": "Anyone can join the conversation. Open your bottle of wine and let's chat.",
+		"zoom": "https://brainstation-io.zoom.us/j/6114746279?pwd=QlZjaml3M3MyZz09",
+		"organizer": "Heather",
+		"tags": [
+			"wine",
+			"talk",
+			"conversation"
+		],
+		"attend": false,
+		"img": "https://firebasestorage.googleapis.com/v0/b/tribe-7761c.appspot.com/o/wine%20(1).jpg?alt=media&token=a2bfe9ee-67f4-425d-8685-5f5e5138dc06"
 	}
 ]

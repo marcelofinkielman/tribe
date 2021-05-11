@@ -10,4 +10,10 @@
     margin-bottom: 10px;
     color: rgb(82, 81, 81);
   }
+  
+  &__button {
+    @include publishButton;
+    width: 100px;
+    margin-left: 40px;
+  }
 }

@@ -7,23 +7,23 @@ import { Link } from "react-router-dom";
 import Profile from "../../assets/images/profile.jpg"
 
 
-function NavBar() {
+function NavBar({loggedIn}) {
 
   return (
     <>
       <div className="navBar">
-
         <div className="navBar__logo-container1">
-          <Link to="/login"> <img className="navBar__logo" src={Tlogo} alt="inStock logo" />
+          <Link to="/login"> <img className="navBar__logo" src={Tlogo} alt="tribe logo" />
           </Link>
         </div>
         <div className="navBar__logo-container2">
-          <Link to="/login"><img className="navBar__logo" src={Logo} alt="inStock logo" />
+          <Link to="/login"><img className="navBar__logo" src={Logo} alt="tribe logo" />
           </Link>
         </div>
+        {loggedIn === true && 
         <div className="navBar__linksAndProfiles">
           <Link to="/interests">
-            <img className="navBar__profile" src={Profile} alt="inStock logo" />
+            <img className="navBar__profile" src={Profile} alt="tribe logo" />
             </Link>
           <div className="navBar__links">
             <Link to="/profile" className="navBar__link">
@@ -34,6 +34,7 @@ function NavBar() {
         </Link>
           </div>
         </div>
+        }
       </div>
     </>
   );

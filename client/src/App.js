@@ -11,18 +11,26 @@ import Footer from "./components/footer/Footer.jsx";
 
 
 
+
 class App extends React.Component {
+  state = {
+    loggedIn: false,
+  }
+  
+  updatedUser = () => {
+    this.setState ({ loggedIn: true })
+  }
   render() {
     return (
       <>
         <div className="app">
           <BrowserRouter>
             <div className="app__nav">
-              <NavBar />
+              <NavBar loggedIn = {this.state.loggedIn}/>
             </div>
             <div className="app__body">
               <Switch>
-                <Route path="/login" exact component={ LoginPage } />
+                <Route path="/login" exact render={() => <LoginPage updatedUser={this.updatedUser} /> } />
                 <Route path="/profile" component={ MyPage } />
                 <Route path="/interests" component={ MyInterests } />
                 <Route path="/create" component={ CreateEvent } />

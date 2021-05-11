@@ -82,6 +82,7 @@ class MyInterests extends React.Component {
               type="text"
               placeholder="What are you looking for?"
               value={this.state.interest1}
+              autoComplete="off"
               onChange={
                 (e) => this.handleActivitiesUpdate(e)
               }
@@ -93,6 +94,7 @@ class MyInterests extends React.Component {
               type="text"
               placeholder="What are you looking for?"
               value={this.state.interest2}
+              autoComplete="off"
               onChange={
                 (e) => this.handleActivitiesUpdate(e)
               }
@@ -104,6 +106,7 @@ class MyInterests extends React.Component {
               type="text"
               placeholder="What are you looking for?"
               value={this.state.interest3}
+              autoComplete="off"
               onChange={
                 (e) => this.handleActivitiesUpdate(e)
               }
@@ -115,6 +118,7 @@ class MyInterests extends React.Component {
               type="text"
               placeholder="What are you looking for?"
               value={this.state.interest4}
+              autoComplete="off"
               onChange={
                 (e) => this.handleActivitiesUpdate(e)
               }
@@ -126,13 +130,17 @@ class MyInterests extends React.Component {
               type="text"
               placeholder="What are you looking for?"
               value={this.state.interest5}
+              autoComplete="off"
               onChange={
                 (e) => this.handleActivitiesUpdate(e)
               }
             />
             </p>
-            <button type="submit"
-              className="create__publish-event">Create</button>
+            <button 
+            className="interests__button"
+            type="submit"
+              >Create
+              </button>
           </form>
         </div>
       </>

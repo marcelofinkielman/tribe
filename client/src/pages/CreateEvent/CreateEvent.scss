@@ -21,12 +21,14 @@
   }
 }
 .create {
+  
   padding: $mobile-spacing;
   background-color: $page-color;
   @include desktop {
     display: flex;
     justify-content: center;
   }
+
 
   &__event-inputs {
     display: flex;

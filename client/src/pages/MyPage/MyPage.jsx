@@ -113,7 +113,7 @@ class MyPage extends React.Component {
                   event={event.event}
                   date={event.date}
                   organizer={event.organizer}
-                  tags={event.tags}
+                  tags={event.tags.join(", ")}
                   description={event.description}
                   zoom={event.zoom}
                   button={event.attend}
